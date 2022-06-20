@@ -91,10 +91,10 @@ DATABASES = {
     }
 }
 #connecting to heroku postgress
-#import dj_database_url
+import dj_database_url
 
 
-#DATABASES['default']=dj_database_url.config(conn_max_age=600)
+DATABASES['default']=dj_database_url.config(conn_max_age=600)
 
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':(
